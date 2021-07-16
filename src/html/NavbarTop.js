@@ -4,7 +4,9 @@ import { Route, Switch, Link, NavLink } from 'react-router-dom';
 import Home from './Home';
 import TopModal from './TopModal';
 import BottomModal from './BottomModal';
-
+import { CLEANERS } from '../shared/cleaners';
+import { MAIN } from '../shared/main';
+ 
 class NavbarTop extends Component {
 
     constructor(props) {
