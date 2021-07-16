@@ -1,5 +1,5 @@
-import { CAMPSITES } from '../shared/Campsites'; 
-import { COMMENTS } from '../shared/Comments';
+import { CAMPSITES } from '../shared/campsites'; 
+import { COMMENTS } from '../shared/comments';
 import { CLEANERS } from '../shared/cleaners';
 import { MAIN } from '../shared/main';
 
