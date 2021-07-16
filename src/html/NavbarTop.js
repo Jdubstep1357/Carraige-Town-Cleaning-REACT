@@ -2,6 +2,8 @@ import React, { Component }  from 'react';
 import { Navbar, NavbarBrand, Jumbotron, NavbarToggler, Collapse, NavItem, Nav, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { Route, Switch, Link, NavLink } from 'react-router-dom';
 import Home from './Home';
+import TopModal from './TopModal';
+import BottomModal from './BottomModal';
 
 class NavbarTop extends Component {
 
@@ -71,10 +73,10 @@ class NavbarTop extends Component {
                     
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>
-                        <p>Hello</p>
+                        <TopModal />
                     </ModalHeader>
                     <ModalBody>
-                    
+                        <BottomModal />
                     </ModalBody>
 
                 </Modal>
