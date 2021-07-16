@@ -1,11 +1,11 @@
 import React, { Component }  from 'react';
 
-class About extends Component {
-    render() {
+function About(props)  {
         return(
-            <p className="Heading">About</p>
-        );
-    }
+            <div className="container">
+                <p className="Heading">About</p>
+            </div>
+       )    
 }
 
 export default About;

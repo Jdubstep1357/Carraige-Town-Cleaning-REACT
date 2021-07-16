@@ -1,11 +1,10 @@
 import React, { Component }  from 'react';
 
-class Covid extends Component {
-    render() {
+function Covid(props) {
         return(
             <p className="Heading">Covid</p>
         );
-    }
+    
 }
 
 export default Covid;

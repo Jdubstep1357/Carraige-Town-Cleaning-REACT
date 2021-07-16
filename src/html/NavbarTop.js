@@ -1,19 +1,24 @@
 import React, { Component }  from 'react';
-import { NavLink, Navbar, NavbarBrand, Jumbotron, NavbarToggler, Collapse, NavItem, Nav } from 'reactstrap';
-import { Route, Switch, Link } from 'react-router-dom';
+import { Navbar, NavbarBrand, Jumbotron, NavbarToggler, Collapse, NavItem, Nav, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Route, Switch, Link, NavLink } from 'react-router-dom';
+import Home from './Home';
 
 class NavbarTop extends Component {
 
     constructor(props) {
         super(props);
 
-        //bind event handler
+
+        this.state = {
+            isNavOpen: false,
+            isModalOpen: false
+        };
+         //bind event handler
         //ensures that when called this is binded to component
         this.toggleNav = this.toggleNav.bind(this);
-        this.state = {
-            isNavOpen: false
-        };
+        this.toggleModal = this.toggleModal.bind(this);
     }
+
 
     //! is the logica
     toggleNav() {
@@ -22,21 +27,17 @@ class NavbarTop extends Component {
         });
     }
 
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        });
+    }
+
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <h1>NuCamp</h1>
-                                <h2>a better way to camp</h2>
-                            </div>
-                        </div>
-                    </div>
-                </Jumbotron>
-
-                <Navbar dark sticky="top" expand="md">
+     
+                <Navbar sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/">Logo</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
@@ -57,15 +58,32 @@ class NavbarTop extends Component {
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Covid">Covid</NavLink>
                                 </NavItem>
-
-                                
                             </Nav>
+                            <span className="navbar-text ml-auto">
+                                <Button outline onClick={this.toggleModal}>
+                                    <p>Ready to work?</p>
+                                </Button>
+                            </span>
                         </Collapse>
                     </div>
                 </Navbar>
+
+                    
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>
+                        <p>Hello</p>
+                    </ModalHeader>
+                    <ModalBody>
+                    
+                    </ModalBody>
+
+                </Modal>
             </React.Fragment>
         );
     }
+    /*isOpen refers to true/false statement of modal, which is set to this.state = false
+    toggle refers to the toggle action which closes it when opened
+    */
 }
 
 export default NavbarTop;
