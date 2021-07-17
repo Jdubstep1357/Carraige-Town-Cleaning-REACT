@@ -8,6 +8,7 @@ import Footer from './Footer';
 import About from './About';
 import Locations from './Locations';
 import Main from '../shared/main';
+import { addCleaner } from '../redux/ActionCreators';
 
 //set up redux
 //takes state as argument and returns arrays as props
@@ -19,6 +20,10 @@ const mapStateToProps = state => {
     main: state.main
   }
 }
+
+const mapDispatchToProps = {
+  addCleaner: (cleanerId, email, phone, fullname) => (addCleaner(cleanerId, email, phone, fullname)),
+};
 
 //router
 class MainComponent extends Component {
@@ -64,6 +69,6 @@ class MainComponent extends Component {
 
   //set up connect method for mapStateToProps
   //withRouter wraps export in it so it will still work
-  export default withRouter(connect(mapStateToProps)(MainComponent));
+  export default withRouter(connect(mapStateToProps, mapDispatchToProps)(MainComponent));
 
   //Figure out the filter part
