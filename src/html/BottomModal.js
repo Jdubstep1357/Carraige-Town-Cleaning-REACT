@@ -12,6 +12,7 @@ const isNumber = val => !isNaN(+val);
 const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 
+
 class BottomModal extends Component {
 
     /*constructor is another name for object
@@ -32,18 +33,24 @@ class BottomModal extends Component {
             }
         };
  
+        
     
 
         //Makes it so we can use this keyword and have it point to correct object
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        })
+    }
  
     
 
     handleSubmit(values) {
-        console.log("Current state is: " + JSON.stringify(values));
-        alert("Current state is: " + JSON.stringify(values));
+        this.toggleModal();
+        this.props.postCleaner(this.props.cleanerId, values.fullname, values.email, values.phone);
     }
 
     render() {

@@ -8,7 +8,7 @@ import Footer from './Footer';
 import About from './About';
 import Locations from './Locations';
 import Main from '../shared/main';
-import { addCleaner } from '../redux/ActionCreators';
+import { postCleaner } from '../redux/ActionCreators';
 
 //set up redux
 //takes state as argument and returns arrays as props
@@ -22,7 +22,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = {
-  addCleaner: (cleanerId, email, phone, fullname) => (addCleaner(cleanerId, email, phone, fullname)),
+  postCleaner: (cleanerId, email, phone, fullname) => (postCleaner(cleanerId, email, phone, fullname)),
 };
 
 //router
