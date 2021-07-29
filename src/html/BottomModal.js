@@ -1,6 +1,7 @@
 import React, { Component }  from 'react';
 import { Button, Label, Col, Row } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+import NavbarTop from './NavbarTop';
 
 //recieves value and makes sure that value recieves true or false
 const required = val => val && val.length;
@@ -15,14 +16,28 @@ const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 class BottomModal extends Component {
 
-    /*constructor is another name for object
-    super is defined when one wants to access props in constructor
-    */
 
+
+
+//! is the logica
+toggleNav() {
+    this.setState({
+        isNavOpen: !this.state.isNavOpen
+    });
+}
+
+
+
+handleSubmit(values) {
+
+    this.props.postCleaner(this.props.cleanerId, values.fullname, values.email, values.phone);
+}
 
     constructor(props) {
         super(props);
         this.state = {
+            isNavOpen: false,
+            isModalOpen: false,
             Name: '',
             Email: '',
             phoneNumber: '',
@@ -32,26 +47,16 @@ class BottomModal extends Component {
                 phoneNumber: false
             }
         };
- 
-        
-    
-
-        //Makes it so we can use this keyword and have it point to correct object
+        this.toggleNav = this.toggleNav.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+
     }
 
-    toggleModal() {
-        this.setState({
-            isModalOpen: !this.state.isModalOpen
-        })
-    }
+  
  
     
 
-    handleSubmit(values) {
-        this.toggleModal();
-        this.props.postCleaner(this.props.cleanerId, values.fullname, values.email, values.phone);
-    }
+
 
     render() {
         
@@ -60,10 +65,7 @@ class BottomModal extends Component {
         return(
             <React.Fragment>
                <div className="row row-content">
-                    <div className="col-12">
-                        <h2>Send us your Feedback</h2>
-                        <hr />
-                    </div>
+            
                     <div className="col-md-10">
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             
