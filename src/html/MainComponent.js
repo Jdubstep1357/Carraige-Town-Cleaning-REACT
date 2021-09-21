@@ -9,6 +9,7 @@ import About from './About';
 import Locations from './Locations';
 import Main from '../shared/main';
 import { postCleaner } from '../redux/ActionCreators';
+import States  from './States';
 
 //set up redux
 //takes state as argument and returns arrays as props
@@ -47,6 +48,7 @@ class MainComponent extends Component {
         );
       }
 
+
       //Connects to each thing
       // : on campsiteId tells what follows forward slash is going to be parameter and takes whatever it is and puts it in main
       return(
@@ -57,7 +59,8 @@ class MainComponent extends Component {
           <Route path='/About' component={AboutPage} />
           <Route path='/Covid' component={Covid} />
           <Route path='/Locations' component={Locations} />
-          
+          <Route path='/States' component={States} />
+
         </Switch>
 
         <Footer />

@@ -6,7 +6,7 @@ function About(props)  {
                 <div class="row mx-auto mb-5 mt-3">
                     <div class="col-sm-12 col-lg New2">
                         <h1>Our Locations</h1>
-                    </div>pw
+                    </div>
                 </div>
 
                 <div class="row mb-5 mt-4">
