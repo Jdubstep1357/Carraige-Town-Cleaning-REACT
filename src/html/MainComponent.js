@@ -42,11 +42,7 @@ class MainComponent extends Component {
       //
   
 
-      const AboutPage = () => {
-        return (
-          <About />
-        );
-      }
+
 
 
       //Connects to each thing
@@ -56,8 +52,6 @@ class MainComponent extends Component {
         <NavbarTop />
         <Switch>
           <Route path='/Home' component={HomePage} />
-          <Route path='/About' component={AboutPage} />
-          <Route path='/Covid' component={Covid} />
           <Route path='/Locations' component={Locations} />
           <Route path='/States' component={States} />
 

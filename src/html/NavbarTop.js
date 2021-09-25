@@ -43,39 +43,34 @@ class NavbarTop extends Component {
      
                 <Navbar sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto TopText" href="/">Logo</NavbarBrand>
+                        <NavbarBrand className="mr-auto TopText" href="/">
+                        <img src='../images/Logo.png' alt="Trash5" width="110px" />
+                        </NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="navbar TopText">
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Home">
-                                        <p class="TopText">Home</p>
+                                        <div className="BackBlack">
+                                             <p className="TopText">Home</p>
+                                        </div>
                                     </NavLink>
                                 </NavItem>
 
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/About">
-                                        <p class="TopText">About</p>
-                                    </NavLink>
-                                </NavItem>
+      
 
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Locations">
-                                        <p class="TopText">Locations</p>
+                                        <div className="BackBlack">
+                                            <p class="TopText">Locations</p>
+                                        </div>
                                     </NavLink>
                                 </NavItem>
-
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/Covid">
-                                        <p class="TopText">Covid</p>
-                                    </NavLink>
-                                </NavItem>
+                             
                             </Nav>
-                            <span className="navbar-text ml-auto">
-                                <Button onClick={this.toggleModal}>
-                                    <p class="ModalButton">Ready to work?</p>
-                                </Button>
-                            </span>
+                            <Button className="offset-md-4" onClick={this.toggleModal}>
+                                        <p class="ModalButton">Ready to work?</p>
+                            </Button>
                         </Collapse>
                     </div>
                 </Navbar>

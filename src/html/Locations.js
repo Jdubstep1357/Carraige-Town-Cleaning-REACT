@@ -1,8 +1,9 @@
 import React, { Component }  from 'react';
 import { Button } from 'reactstrap';
-import  States  from './States';
+import { Carousel } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import Carousel from 'react-bootstrap/Carousel';
+
+
 
 function Locations() {
     const history = useHistory();

@@ -30,28 +30,3 @@ class App extends Component {
 
 export default App;
 
-/* ROUTE INFORMATION
-
-<div>
-<NavbarTop />
-
-<Router>
-  <Switch>
-    <Route path="/Home">
-      <Home />
-    </Route>
-    <Route path="/About">
-      <About />
-    </Route>
-    <Route path="/Locations">
-      <Locations />
-    </Route>
-    <Route path="/Covid">
-      <Covid />
-    </Route>
-    <Redirect to="/Home" />
-  </Switch>
-</Router>
-<Footer />
-</div>
-*/

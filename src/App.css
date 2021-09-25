@@ -3,19 +3,25 @@
 }
 
 .navbar {
-  background-color: #13829f;
+  background-color: #E81C33;
 }
 
 .TopText {
   color: white;
 }
 
+.BackBlack {
+	background-color: black;
+	padding: 1px 1px 0px 1px;
+	border-radius: 3px;
+}
+
 .ModalButton {
   color: white !important;
   border: 1px solid white !important;
   padding: 15px;
-  font-size: 20px;
-  background-color: none !important;
+  font-size: 15px;
+  background-color: black;
 }
 
 .Modal:active {
@@ -23,27 +29,27 @@
 }
 
 .Footer {
-  background-color: #13829f;
-  color: #13829f;
+  background-color: #E81C33;
+  color: #E81C33;
 }
 
 
 .MainPic {
-	border: 2px solid #b95353;
+	border: 2px solid #E81C33;
 	height: 400px;
 }
 
 .RedDivBorder {
-	background-color: #b95353;
+	background-color: #C3C3C3;
 	height: 10px;
-	color: #b95353;
+	color: #C3C3C3;
 	padding: 5px;
 	width: 100%;
 }
 
 .Blue {
 	height: 100px;
-	background-color: #f1b856;
+	background-color: #E81C33;
 }
 
 /* SECOND PART ie LOCATIONS */
@@ -64,4 +70,17 @@
 	height: 50px;
 	width: 400px;
 	border: 2px solid black;
+}
+
+
+
+.Space {
+	background-color: white;
+	color: white;
+	padding: 40px;
+}
+
+.Centered {
+	margin: 0 active;
+	display: block;
 }
