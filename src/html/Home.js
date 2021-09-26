@@ -1,6 +1,5 @@
 import React, { Component }  from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, Container, Row, Col, Button } from 'reactstrap';
-import Trash from '../images/trash.png'
 
 class Home extends React.Component {
 	render() {
@@ -27,7 +26,7 @@ class Home extends React.Component {
 
 					<div class="col-sm-12 col-md-4">
 
-						<img src='../images/trash.png' class="img-fluid Centered" alt="Trash5" width="100px"/>
+						<img src='images/trash.png' class="img-fluid Centered" alt="Trash5" width="100px"/>
 					
 
 						<p>Manage all forms of waste</p>
