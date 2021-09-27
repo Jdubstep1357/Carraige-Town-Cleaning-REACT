@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import { Button, Label, Col, Row } from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import NavbarTop from './NavbarTop';
+import { postCleaner } from '../redux/ActionCreators';
 
 //recieves value and makes sure that value recieves true or false
 const required = val => val && val.length;
@@ -19,7 +20,6 @@ class BottomModal extends Component {
 
 
 
-//! is the logica
 toggleNav() {
     this.setState({
         isNavOpen: !this.state.isNavOpen
@@ -30,7 +30,7 @@ toggleNav() {
 
 handleSubmit(values) {
 
-    this.props.postCleaner(this.props.cleanerId, values.fullname, values.email, values.phone);
+    postCleaner(this.props.cleanerId, values.fullname, values.email, values.phone);
 }
 
     constructor(props) {

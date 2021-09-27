@@ -89,3 +89,11 @@
 width: 40px;
 
 }
+
+.carousel-control-prev-icon {
+	background-color: green;
+}
+
+.carousel-control-next-icon {
+	background-color: purple;
+}

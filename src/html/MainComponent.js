@@ -10,6 +10,8 @@ import Locations from './Locations';
 import Main from '../shared/main';
 import { postCleaner } from '../redux/ActionCreators';
 import States  from './States';
+import States2 from './States2';
+import States3 from './States3';
 
 //set up redux
 //takes state as argument and returns arrays as props
@@ -54,6 +56,9 @@ class MainComponent extends Component {
           <Route path='/Home' component={HomePage} />
           <Route path='/Locations' component={Locations} />
           <Route path='/States' component={States} />
+          <Route path='/States2' component={States2} />
+          <Route path='/States3' component={States3} />
+
 
         </Switch>
 

@@ -1,44 +1,57 @@
-import React, { Component }  from 'react';
-import { Button } from 'reactstrap';
-import { Carousel } from 'react-bootstrap';
+import React, { Component, useState }  from 'react';
 import { useHistory } from 'react-router-dom';
-import { UncontrolledCarousel } from 'reactstrap';
+import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-const items = [
-  {
-    src: 'images/favicon.png',
-    altText: 'Slide 1',
-    caption: 'Slide 1',
-    header: 'Slide 1 Header',
-    key: '1'
-  },
-  {
-    src: 'images/Logo.jpg',
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    header: 'Slide 2 Header',
-    key: '2'
-  },
-  {
-    src: 'images/Trash.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    header: 'Slide 3 Header',
-    key: '3'
+
+class Locations extends React.Component {
+  render() {
+
+    function History() {
+          const history = useHistory();
+
+          const States = () => {
+              history.push("/states");
+              history.push("/states2");
+              history.push("/states3");
+            }
+
+          }
+
+          return (
+            <React.Fragment>
+              <h1 className="stateHeader">States</h1>
+              <Carousel className="col-5 carousel">
+                <Link to="/States">
+                  <div>
+                    <h4>Location 1</h4>
+                    <img src="images/favicon.png" />
+                    <p>Some text here</p>
+                  </div>
+                </Link>
+                <Link to="/States2">
+                  <div>
+                    <h4>Location 2</h4>
+                    <img src="images/favicon.png" />
+                    <p>Some text here</p>
+                  </div>
+                </Link>
+                <Link to="/States3">
+                  <div>
+                    <h4>Location 3</h4>
+                    <img src="images/favicon.png" />
+                    <p>Some text here</p>
+                  </div>
+                </Link>              
+              </Carousel>
+            </React.Fragment>
+ 
+          );
+      };
+    
   }
-];
-
- function Locations() {
-      const history = useHistory();
-
-      const States = () => {
-          history.push("/states");
-      }
-
-      return (
-      <UncontrolledCarousel items={items} />
-      )
-  }
+  
 
 
 export default Locations;
