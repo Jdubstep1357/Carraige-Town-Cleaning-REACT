@@ -1,8 +1,8 @@
-    
-    //THIS IS USED FOR ONCLICK ON PHOTO FROM NUCAMP SITE
+
+//THIS IS USED FOR ONCLICK ON PHOTO FROM NUCAMP SITE
 
 
-    // The * acts as a wildcard that allows one to import all named exports at once
+// The * acts as a wildcard that allows one to import all named exports at once
 import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseUrl';
 
@@ -27,15 +27,15 @@ export const postCleaner = (cleanerId, fullname, phone, email) => dispatch => {
     };
     newCleaner.date = new Date().toISOString();
 
-    return fetch(baseUrl + 'comments', {
-            method: "POST",
-            body: JSON.stringify(newCleaner),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
+    return fetch(baseUrl + 'readytowork', {
+        method: "POST",
+        body: JSON.stringify(newCleaner),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
         .then(response => {
-            if(response.ok) {
+            if (response.ok) {
                 return response;
             } else {
                 const error = new Error(`Error ${response.status}: ${response.statusText}`);
@@ -43,12 +43,12 @@ export const postCleaner = (cleanerId, fullname, phone, email) => dispatch => {
                 throw error;
             }
         },
-        error => { throw error; }
-    )
-    .then(response => response.json())
-    .then(response => dispatch(addCleaner(response)))
-    .catch(error => {
-        console.log('post comment', error.message);
-        alert('Your comment could not be posted/nError: ' + error.message);
-    });
+            error => { throw error; }
+        )
+        .then(response => response.json())
+        .then(response => dispatch(addCleaner(response)))
+        .catch(error => {
+            console.log('post comment', error.message);
+            alert('Your comment could not be posted/nError: ' + error.message);
+        });
 };
