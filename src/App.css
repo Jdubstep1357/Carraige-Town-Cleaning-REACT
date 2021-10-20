@@ -97,3 +97,7 @@ width: 40px;
 .carousel-control-next-icon {
 	background-color: purple;
 }
+.carousel{
+	text-align: center;
+	margin: 0 auto;
+}

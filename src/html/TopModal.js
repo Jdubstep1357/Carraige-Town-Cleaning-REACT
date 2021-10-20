@@ -1,13 +1,13 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 
 class TopModal extends Component {
     render() {
-        return(
+        return (
             <React.Fragment>
-       <div class="card col-sm-12 col-md-12 col-offset-md-1">
-                        <img class="card-img-top Background" alt="Card Image" />
-                   
-                    </div>
+                <div class="card col-sm-12 col-md-12 col-offset-md-1">
+                    <img class="card-img-top Background" alt="Card " />
+
+                </div>
             </React.Fragment>
 
         );

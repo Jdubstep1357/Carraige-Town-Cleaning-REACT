@@ -5,7 +5,7 @@ import * as ActionTypes from './ActionTypes';
 
 //reducer function to handle each part of state
 export const Cleaners = (state = CLEANERS, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case ActionTypes.ADD_CLEANER:
             //action.payload is object. You can add more to it, ie: id and date
             const cleaner = action.payload;

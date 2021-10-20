@@ -1,12 +1,9 @@
-import React, { Component }  from 'react';
-import { Navbar, NavbarBrand, Jumbotron, NavbarToggler, Collapse, NavItem, Nav, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
-import { Route, Switch, Link, NavLink } from 'react-router-dom';
-import Home from './Home';
+import React, { Component } from 'react';
+import { Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Nav, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 import TopModal from './TopModal';
 import BottomModal from './BottomModal';
-import { CLEANERS } from '../shared/cleaners';
-import { MAIN } from '../shared/main';
- 
+
 class NavbarTop extends Component {
 
     constructor(props) {
@@ -17,7 +14,7 @@ class NavbarTop extends Component {
             isNavOpen: false,
             isModalOpen: false
         };
-         //bind event handler
+        //bind event handler
         //ensures that when called this is binded to component
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
@@ -40,11 +37,11 @@ class NavbarTop extends Component {
     render() {
         return (
             <React.Fragment>
-     
+
                 <Navbar sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto TopText" href="/">
-                        <img src='../images/Logo.png' alt="Trash5" width="110px" />
+                            <img src='../images/Logo.png' alt="Trash5" width="110px" />
                         </NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -52,12 +49,12 @@ class NavbarTop extends Component {
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Home">
                                         <div className="BackBlack">
-                                             <p className="TopText">Home</p>
+                                            <p className="TopText">Home</p>
                                         </div>
                                     </NavLink>
                                 </NavItem>
 
-      
+
 
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Locations">
@@ -66,16 +63,16 @@ class NavbarTop extends Component {
                                         </div>
                                     </NavLink>
                                 </NavItem>
-                             
+
                             </Nav>
                             <Button className="offset-md-4" onClick={this.toggleModal}>
-                                        <p class="ModalButton">Ready to work?</p>
+                                <p class="ModalButton">Ready to work?</p>
                             </Button>
                         </Collapse>
                     </div>
                 </Navbar>
 
-                    
+
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>
                         <TopModal />

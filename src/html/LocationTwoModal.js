@@ -6,6 +6,16 @@ import { baseUrl } from '../shared/baseUrl';
 
 import { connect } from 'react-redux';
 
+//Wiscoinsin locations 
+/*
+Appleton,
+EauClaire,
+GreenBay,
+MadisonEast,
+MadisonWest,
+Milwaukee
+*/
+
 //recieves value and makes sure that value recieves true or false
 const required = val => val && val.length;
 //wrap a function inside of a function (2 arrow functions)
@@ -17,7 +27,7 @@ const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
 
 
 
-class BottomModal extends Component {
+class LocationTwoModal extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -166,26 +176,10 @@ class BottomModal extends Component {
                                             required
                                         }}
 
-                                    >   <option value="">select a location</option>
-                                        <option value="Location1">Location 1</option>
+                                    > <option selected value="">select a location</option>
+                                        <option disabled hidden value="MadisonWest">MadisonWest</option>
                                         <option value="Location2">Location 2</option>
-                                        <option value="Location3">Location 3</option>
-                                        <option value="Location4">Location 4</option>
-                                        <option value="Location5">Location 5</option>
-                                        <option value="Location6">Location 6</option>
-                                        <option value="Location7">Location 7</option>
-                                        <option value="Location8">Location 8</option>
-                                        <option value="Location9">Location 9</option>
-                                        <option value="Location10">Location 10</option>
-                                        <option value="Location11">Location 11</option>
-                                        <option value="Location12">Location 12</option>
-                                        <option value="Location13">Location 13</option>
-                                        <option value="Location14">Location 14</option>
-                                        <option value="Location15">Location 15</option>
-                                        <option value="Location16">Location 16</option>
-                                        <option value="Location17">Location 17</option>
-                                        <option value="Location18">Location 18</option>
-
+                                        <option disabled hidden value="Milwaukee">Milwaukee</option>
                                     </Control.select>
 
                                     <Errors
@@ -218,4 +212,4 @@ const mapDispatchToProps = {
     postCleaner: (cleanerId, fullname, phone, email, location) => postCleaner(cleanerId, fullname, phone, email, location)
 };
 
-export default connect(null, mapDispatchToProps)(BottomModal)
+export default connect(null, mapDispatchToProps)(LocationTwoModal)

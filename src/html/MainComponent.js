@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
 import Home from './Home';
 import NavbarTop from './NavbarTop';
-import Covid from './Covid';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Footer from './Footer';
-import About from './About';
 import Locations from './Locations';
-import Main from '../shared/main';
 import { postCleaner } from '../redux/ActionCreators';
 import States from './States';
 import States2 from './States2';
 import States3 from './States3';
-import BottomModal from './BottomModal';
+
 
 //set up redux
 //takes state as argument and returns arrays as props
@@ -26,7 +23,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = {
-  postCleaner: (cleanerId, fullname, phone, email) => (postCleaner(cleanerId, fullname, phone, email)),
+  postCleaner: (cleanerId, fullname, phone, email, location) => (postCleaner(cleanerId, fullname, phone, email, location)),
 };
 
 //router
