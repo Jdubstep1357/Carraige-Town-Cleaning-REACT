@@ -1,3 +1,7 @@
+.Padding {
+	padding: 40px 0px 40px 0px;
+}
+
 .Home {
   color: orange;
 }
@@ -6,14 +10,30 @@
   background-color: #E81C33;
 }
 
+button.navbar-toggler {
+	background-color: black;
+	border-color: white;
+	border-width: 3px;
+}
+
 .TopText {
   color: white;
+  left: 20px;
+  font-size: 20px;
+  padding: 2px;
 }
 
 .BackBlack {
 	background-color: black;
+	padding-right: 10px;
+	border-radius: 3px;
+}
+
+.BackBlack2 {
+	background-color: black;
 	padding: 1px 1px 0px 1px;
 	border-radius: 3px;
+	margin-left: 20px;
 }
 
 .ModalButton {

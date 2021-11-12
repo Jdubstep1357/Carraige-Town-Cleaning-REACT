@@ -8,8 +8,7 @@ class Home extends React.Component {
 				<div className="container">
 					<div className="row">
 						<div className="row">
-							<div className="col-sm-12 col-lg-8 MainPic mt-2 mx-auto">
-							</div>
+						<img src='images/Main_logo.png' class="img-fluid Centered Padding" alt="Logo" width="110px"/>
 						</div>
 
 
