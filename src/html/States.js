@@ -96,7 +96,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card " src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 2</h2>
-                                <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text">Text here that describes the Site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal2}>
                                 <p className="ModalButton">Interested?</p>
