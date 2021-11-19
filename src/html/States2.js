@@ -83,7 +83,7 @@ class States2 extends React.Component {
                         <div class="card col-sm-12 col-md-5 col-offset-md-1">
                             <img class="card-img-top Background" alt="Card 2" src="images/favicon.png" />
                             <div class="card-body">
-                                <h2 class="New">Location 7</h2>
+                                <h2 class="New">Location 7ish</h2>
                                 <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal}>
