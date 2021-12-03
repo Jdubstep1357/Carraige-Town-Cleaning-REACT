@@ -75,7 +75,7 @@ class States extends React.Component {
                 <div className="container">
                     <div class="row mx-auto mb-5 mt-3">
                         <div class="col-sm-12 col-lg New2">
-                            <h1>Our Locations</h1>
+                            <h1 class="ParaText2">Our Locations</h1>
                         </div>
                     </div>
 
@@ -84,7 +84,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card 2" src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 1</h2>
-                                <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text ParaText">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal}>
                                 <p className="ModalButton">Interested?</p>
@@ -96,7 +96,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card " src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 2</h2>
-                                <p class="card-text">Text here that describes the Site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text ParaText">Text here that describes the Site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal2}>
                                 <p className="ModalButton">Interested?</p>
@@ -110,7 +110,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card " src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 3</h2>
-                                <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text ParaText">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal3}>
                                 <p className="ModalButton">Interested?</p>
@@ -122,7 +122,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card " src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 4</h2>
-                                <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text ParaText">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal4}>
                                 <p className="ModalButton">Interested?</p>
@@ -136,7 +136,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card " src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 5</h2>
-                                <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text ParaText">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal5}>
                                 <p className="ModalButton">Interested?</p>
@@ -148,7 +148,7 @@ class States extends React.Component {
                             <img class="card-img-top Background" alt="Card " src="images/favicon.png" />
                             <div class="card-body">
                                 <h2 class="New">Location 6</h2>
-                                <p class="card-text">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
+                                <p class="card-text ParaText">Text here that describes the site itself. Add a photo of someone inside of the company who works at Carraige Town Cleaning and Disinfectants</p>
                             </div>
                             <Button onClick={this.toggleModal6}>
                                 <p className="ModalButton">Interested?</p>

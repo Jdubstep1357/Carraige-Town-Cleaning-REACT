@@ -86,6 +86,8 @@ button.navbar-toggler {
 }
 
 .New {
+	font-family: 'Open Sans', sans-serif;
+
 	text-align: center;
 	background-color: #f1b856;
 }
@@ -132,11 +134,21 @@ font-family: 'Gwendolyn', cursive;
 font-size: 60px;
 }
 
+.LocationText {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
 .ParaText {
 	font-family: 'Open Sans', sans-serif;
 }
 
 .BigFont {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+
+.ParaText2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
 }
