@@ -32,11 +32,7 @@ class MainComponent extends Component {
 
     //takes the information and filters out the specific array
 
-    const HomePage = () => {
-      return (
-        <Home />
-      );
-    };
+
 
     //mains refers to before redux was identified ie: comments: COMMENTS 
     //
@@ -46,21 +42,25 @@ class MainComponent extends Component {
 
     //Connects to each thing
     // : on campsiteId tells what follows forward slash is going to be parameter and takes whatever it is and puts it in main
+
+    //If I make Home at top, it still displays information above at the page.
+    
+    //None of the CSS seems to appear on Home component alone...
     return (
       <div>
-        <NavbarTop />
+          
+          <NavbarTop />
         <Switch>
-          <Route path='/' component={HomePage} />
-          <Route path='/Home' component={HomePage} />
+          <Route path='/Home' component={Home} />
           <Route path='/Locations' component={Locations} />
           <Route path='/States' component={States} />
           <Route path='/States2' component={States2} />
           <Route path='/States3' component={States3} />
-
-
         </Switch>
 
-        <Footer />
+     
+     <Footer />
+
       </div>
 
     );

@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Nav, Button, Mod
 import { NavLink } from 'react-router-dom';
 import TopModal from './TopModal';
 import BottomModal from './BottomModal';
+import Home from './Home';
 
 class NavbarTop extends Component {
 
@@ -81,7 +82,8 @@ class NavbarTop extends Component {
                         <BottomModal />
                     </ModalBody>
 
-                </Modal>
+                </Modal>      
+
             </React.Fragment>
         );
     }

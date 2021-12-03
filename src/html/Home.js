@@ -18,7 +18,7 @@ class Home extends React.Component {
 
 						<div className="row">
 							<div class="text-center mb-3 text-center mx-auto">
-								<h2>What we do</h2>
+								<h1 class="text-center BigFont">What we do</h1>
 							</div>
 						</div>
 
@@ -27,21 +27,21 @@ class Home extends React.Component {
 							<img src='images/trash.png' class="img-fluid Centered" alt="Trash5" width="100px" />
 
 
-							<p>Manage all forms of waste</p>
-							<p>Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
+							<h1 class="text-center HeaderFont">Manage all forms of waste</h1>
+							<p class="ParaText">Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
 						</div>
 
 
 						<div class="col-sm-12 col-md-4 Two">
-							<img src='../images/Sprayer.png' alt="Trash5" width="110px" />
-							<p>Clean windows</p>
-							<p>Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
+							<img src='../images/Sprayer.png' class="img-fluid Centered" alt="Trash5" width="110px" />
+							<h1 class="text-center HeaderFont">Clean windows</h1>
+							<p class="ParaText">Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
 						</div>
 						<div class="col-sm-12 col-md-4 Three">
 
-							<img src='../images/MOP.jpg' alt="Trash5" width="110px" />
-							<p>Disinfect Floors</p>
-							<p>Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
+							<img src='../images/MOP.jpg' class="img-fluid Centered" alt="Trash5" width="110px" />
+							<h3 class="text-center HeaderFont">Disinfect Floors</h3>
+							<p class="ParaText">Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
 						</div>
 					</div>
 
@@ -51,25 +51,25 @@ class Home extends React.Component {
 
 					<div className="row">
 						<div class="text-center mb-3 text-center mx-auto">
-							<h2>How we keep employees safe</h2>
+							<h1  class="BigFont">How we keep employees safe</h1>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-sm-12 col-md-6 One">
 
-							<img src='../images/CDC.jpg' alt="Trash5" width="110px" />
+							<img src='../images/CDC.jpg' class="img-fluid Centered" alt="Trash5" width="110px" />
 
-							<p>Manage all forms of waste</p>
-							<p>Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
+							<h3 class="text-center HeaderFont">Obey CDC guidelines</h3>
+							<p class="ParaText">Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
 						</div>
 						<div class="col-sm-12 col-md-6 Two">
 
 
-							<img src='../images/Machine.jpg' alt="Trash5" width="110px" />
+							<img src='../images/Machine.jpg' class="img-fluid Centered" alt="Trash5" width="110px" />
 
-							<p>Clean windows</p>
-							<p>Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
+							<h3 class="text-center HeaderFont">Clean windows</h3>
+							<p class="ParaText">Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum  Lorem ipsum Lorem ipsum </p>
 						</div>
 
 					</div>
