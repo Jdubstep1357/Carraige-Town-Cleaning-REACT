@@ -50,6 +50,7 @@ class MainComponent extends Component {
       <div>
         <NavbarTop />
         <Switch>
+          <Route path='/' component={HomePage} />
           <Route path='/Home' component={HomePage} />
           <Route path='/Locations' component={Locations} />
           <Route path='/States' component={States} />
