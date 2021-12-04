@@ -25,7 +25,7 @@ class Locations extends Component {
         <Carousel className="col-5 carousel">
           <Link to="/States">
             <div>
-              <h4 class="ParaText">Location 1</h4>
+              <h4>Location 1</h4>
               <img src="images/favicon.png" alt="" />
               <p>Some text here</p>
             </div>
