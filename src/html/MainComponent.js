@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './Home';
+import Home2 from './Home2';
 import NavbarTop from './NavbarTop';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -49,6 +50,9 @@ class MainComponent extends Component {
       <div>
 
       <NavbarTop />
+
+      <Route exact path="/" component={Home2} />
+      
         <Switch>
           <Route path='/Home' component={Home} />
           <Route path='/Locations' component={Locations} />
@@ -56,6 +60,8 @@ class MainComponent extends Component {
           <Route path='/States2' component={States2} />
           <Route path='/States3' component={States3} />
         </Switch>
+       
+
      <Footer />
 
       </div>

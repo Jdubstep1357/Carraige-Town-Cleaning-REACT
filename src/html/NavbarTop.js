@@ -82,7 +82,9 @@ class NavbarTop extends Component {
                         <BottomModal />
                     </ModalBody>
 
-                </Modal>      
+                </Modal>
+
+                  
 
             </React.Fragment>
         );
