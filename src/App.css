@@ -25,6 +25,8 @@ button.navbar-toggler {
   left: 20px;
   font-size: 20px;
   padding: 2px;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .BackBlack {
@@ -46,6 +48,8 @@ button.navbar-toggler {
   padding: 15px;
   font-size: 15px;
   background-color: black;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .Modal:active {
@@ -152,3 +156,6 @@ font-size: 60px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
 }
+
+
+

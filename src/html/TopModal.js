@@ -4,7 +4,7 @@ class TopModal extends Component {
     render() {
         return (
             <React.Fragment>
-                <div class="card col-sm-12 col-md-12 col-offset-md-1">
+                <div class="col-sm-9 img-fluid Centered">
                 <img src='images/Carraige_Mail.png' class="img-fluid Centered Padding" alt="Logo" />
 
                 </div>
