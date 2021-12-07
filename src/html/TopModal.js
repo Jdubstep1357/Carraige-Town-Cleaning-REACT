@@ -5,7 +5,7 @@ class TopModal extends Component {
         return (
             <React.Fragment>
                 <div class="card col-sm-12 col-md-12 col-offset-md-1">
-                    <img class="card-img-top Background" alt="Card " />
+                <img src='images/Carraige_Mail.png' class="img-fluid Centered Padding" alt="Logo" />
 
                 </div>
             </React.Fragment>
