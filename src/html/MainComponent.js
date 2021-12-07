@@ -39,7 +39,6 @@ class MainComponent extends Component {
 
 
 
-
     //Connects to each thing
     // : on campsiteId tells what follows forward slash is going to be parameter and takes whatever it is and puts it in main
 
@@ -48,18 +47,15 @@ class MainComponent extends Component {
     //None of the CSS seems to appear on Home component alone...
     return (
       <div>
-          
-          <NavbarTop />
+
+      <NavbarTop />
         <Switch>
-          <Home />
           <Route path='/Home' component={Home} />
           <Route path='/Locations' component={Locations} />
           <Route path='/States' component={States} />
           <Route path='/States2' component={States2} />
           <Route path='/States3' component={States3} />
         </Switch>
-
-     
      <Footer />
 
       </div>
