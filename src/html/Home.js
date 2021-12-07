@@ -18,7 +18,7 @@ class Home extends React.Component {
 
 						<div className="row">
 							<div class="text-center mb-3 text-center mx-auto">
-								<h1 class="text-center BigFont">What we doTest</h1>
+								<h1 class="text-center BigFont">What we doTesting123</h1>
 							</div>
 						</div>
 
